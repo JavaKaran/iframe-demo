@@ -15,7 +15,7 @@ function initializeWidget(){
 
     frame.addEventListener('load', function(){
         console.log("loaded")
-        frame.contentWindow.postMessage("demo", "*");
+        frame.contentWindow.postMessage("demo", "https://iframe-demo-omega.vercel.app/");
     })
 }
 
