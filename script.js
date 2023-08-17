@@ -15,7 +15,7 @@ function initializeWidget(){
 
     frame.addEventListener('load', function(){
         console.log("loaded")
-        frame.contentWindow.postMessage("demo", window.location.origin);
+        frame.contentWindow.postMessage("demo", "*");
     })
 }
 
