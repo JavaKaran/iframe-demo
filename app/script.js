@@ -1,4 +1,6 @@
 
 window.addEventListener('message', function(event){
-    console.log("hello",event.data);
+    if(event.origin == "https://iframe-demo-omega.vercel.app/"){
+        console.log("hello",event.data);
+    }
 })
