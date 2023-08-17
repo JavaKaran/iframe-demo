@@ -5,17 +5,15 @@ function initializeWidget(){
 
     let iframe = document.createElement('iframe');
     iframe.id = 'iframe-container';
-    iframe.src = "../page2.html";
+    iframe.src = "https://iframe-demo-omega.vercel.app/page2.html";
 
     mainContainer.appendChild(iframe);
 
     document.body.appendChild(mainContainer);
 
-    let frame = document.querySelector("#iframe-container");
-
-    frame.addEventListener('load', function(){
+    iframe.addEventListener('load', function(){
+        iframe.contentWindow.postMessage("message", "https://iframe-demo-omega.vercel.app/");
         console.log("loaded")
-        frame.contentWindow.postMessage("demo", "https://iframe-demo-omega.vercel.app/");
     })
 }
 

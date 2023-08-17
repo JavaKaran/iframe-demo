@@ -9,4 +9,9 @@
     <h1>Hi there</h1>
     <p>this is embedded in iframe</p>
 </body>
+<script>
+    window.addEventListener('message', function(e){
+        console.log(e.data)
+    })
+</script>
 </html>
