@@ -13,7 +13,7 @@ function initializeWidget(){
 
     iframe.addEventListener('load', function(){
         console.log("loaded")
-        iframe.contentWindow.postMessage("message", "https://iframe-demo-omega.vercel.app/");
+        iframe.contentWindow.postMessage("message", "https://iframe-demo-omega.vercel.app");
     })
 }
 

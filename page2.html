@@ -11,8 +11,9 @@
 </body>
 <script>
     window.addEventListener('message', function(e){
-        if(e.target === 'https://iframe-demo-omega.vercel.app/')
-        console.log("hello",e.data)
+        if(e.origin === 'https://iframe-demo-omega.vercel.app'){
+            console.log("hello",e.data)
+        }
     })
 </script>
 </html>
