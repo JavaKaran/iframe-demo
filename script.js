@@ -12,8 +12,8 @@ function initializeWidget(){
     document.body.appendChild(mainContainer);
 
     iframe.addEventListener('load', function(){
-        iframe.contentWindow.postMessage("message", "https://iframe-demo-omega.vercel.app/");
         console.log("loaded")
+        iframe.contentWindow.postMessage("message", "https://iframe-demo-omega.vercel.app/");
     })
 }
 
